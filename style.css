@@ -1,11 +1,11 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #f4f4f4, #333); 
+    background-image: linear-gradient(to bottom, #f4f4f4, #333);
     background-attachment: fixed;
     color: black;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 header {
@@ -14,15 +14,15 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-/* Estilo do botão*/
 .container {
     text-align: right;
+    margin-bottom: 10px; /* Adicionando um pouco de espaço abaixo do botão */
 }
 
 button {
-    text-align: right;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -30,7 +30,7 @@ button {
     background-color: #c4c3c1;
     color: black;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 button:hover {
@@ -38,8 +38,7 @@ button:hover {
     color: rgb(253, 253, 253);
 }
 
-
-.img{
+.img {
     text-align: center;
 }
 
@@ -66,7 +65,6 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
-/*Tabela*/
 table {
     width: 90%;
     border-collapse: collapse;
@@ -79,43 +77,46 @@ th, td {
     text-align: left;
     font-size: 14px;
     color: #020202;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 th {
     background-color: #7e7e7e;
     font-weight: bold;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 #Integrantes, #Projeto, #Divisão {
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px; /* Aumentando a largura máxima para telas maiores */
     background-color: #e0dfde;
     border: 5px solid #636262;
     border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-.img{
-    text-align: center; 
-}
-
-h1{
+h1 {
     color: #fafafa;
+    transition: color 0.3s; /* Adicionando transição para o modo escuro */
 }
-p,h2{
+
+p, h2 {
     color: #0a0a0a;
+    transition: color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 .footer {
-    background-color: #333; /* Cor de fundo diferente */
-    color: white; /* Cor do texto */
-    text-align: center; /* Alinhamento do texto */
-    padding: 8px ; /* Espaçamento interno */
-    margin-top: 14px; /* Margem superior */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px; /* Aumentando o padding para melhor visualização */
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-
+/* Estilos para o modo escuro */
 .dark-mode {
     background-image: linear-gradient(to bottom, #1a1a1a, #000);
     color: white;
@@ -136,28 +137,88 @@ p,h2{
 
 .dark-mode th, .dark-mode td {
     color: white;
-    border: 1px solid rgb(255, 255, 255);
+    border-color: #555;
 }
 
 .dark-mode #Integrantes, .dark-mode #Projeto, .dark-mode #Divisão {
     background-color: #242323;
-    border: 5px solid #222;
+    border-color: #222;
 }
 
 .dark-mode p, .dark-mode h2, .dark-mode h1 {
     color: #fff;
 }
 
-.dark-mode .footer{
+.dark-mode .footer {
     background-color: #242323;
-    color: white; 
-    text-align: center; 
-    padding: 8px ; 
-    margin-top: 14px; 
+    color: white;
 }
 
-@media (max-width: 768px) {
-    #Integrantes, #Divisão, #Projeto,header {
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    #Integrantes, #Divisão, #Projeto, header, table {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block; /* Coloca os itens do menu em linhas separadas */
+        margin: 10px 0; /* Adiciona um pouco de espaço entre os itens */
+    }
+
+    .container {
+        text-align: center; /* Centraliza o botão em telas menores */
+    }
+
+    button {
+        width: 80%; /* Faz o botão ocupar mais largura em telas menores */
+        margin-bottom: 15px;
+    }
+
+    .img div {
+        margin-bottom: 20px; /* Adiciona espaço entre os membros da equipe */
+        padding: 15px;
+        border: 1px solid #ccc; /* Adiciona uma borda sutil para separar os membros */
+        border-radius: 5px;
+    }
+
+    .img img {
+        width: 100px; /* Reduz o tamanho das imagens em telas menores */
+        height: auto;
+    }
+
+    th, td {
+        font-size: 12px; /* Reduz a fonte da tabela em telas menores */
+        padding: 6px 8px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduz o tamanho dos subtítulos */
+    }
+}
+
+/* Media query para telas um pouco maiores que celulares (tablets pequenos) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #Integrantes, #Divisão, #Projeto, header, table {
         max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
     }
 }
