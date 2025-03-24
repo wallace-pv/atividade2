@@ -87,7 +87,7 @@ th {
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-#Integrantes, #Projeto, #Divisão {
+#Integrantes, #Projeto, #Divisão  {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px; /* Aumentando a largura máxima para telas maiores */
@@ -95,6 +95,22 @@ th {
     border: 5px solid #636262;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
+}
+
+#Integrantes > div { /* Estilos para as divs dos integrantes */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+    border-radius: 8px; /* Arredonda os cantos */
+    padding: 15px; /* Adiciona um espaçamento interno */
+    margin-bottom: 20px; /* Mantém o espaçamento entre os integrantes */
+    background-color: white; /* Adiciona um fundo branco para destacar */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+.dark-mode #Integrantes > div { /* Estilos para as divs dos integrantes no modo escuro */
+    background-color: #333; /* Cor de fundo para o modo escuro */
+    border-color: #555; /* Cor da borda para o modo escuro */
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para o modo escuro */
 }
 
 h1 {
