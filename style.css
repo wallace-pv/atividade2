@@ -157,7 +157,7 @@ p,h2{
 }
 
 @media (max-width: 768px) {
-    #Integrantes, #Divisão, #Projeto {
+    #Integrantes, #Divisão, #Projeto,header {
         max-width: 90%;
     }
 }
