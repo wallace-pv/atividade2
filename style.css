@@ -9,12 +9,14 @@ body {
 }
 
 header {
+    font-family: 'Times New Roman', Times, serif;
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilo do botão*/
 .container {
     text-align: right;
 }
@@ -34,6 +36,83 @@ button {
 button:hover {
     background-color: #050505;
     color: rgb(253, 253, 253);
+}
+
+
+.img{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/*Tabela*/
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #020202;
+}
+
+th {
+    background-color: #7e7e7e;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Integrantes, #Projeto, #Divisão {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #e0dfde;
+    border: 5px solid #636262;
+    border-radius: 8px;
+}
+
+.img{
+    text-align: center; 
+}
+
+h1{
+    color: #fafafa;
+}
+p,h2{
+    color: #0a0a0a;
+}
+
+.footer {
+    background-color: #333; /* Cor de fundo diferente */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 8px ; /* Espaçamento interno */
+    margin-top: 14px; /* Margem superior */
 }
 
 
@@ -77,84 +156,8 @@ button:hover {
     margin-top: 14px; 
 }
 
-.img{
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-table {
-    width: 90%;
-    border-collapse: collapse;
-    margin: 20px auto;
-}
-
-th, td {
-    border: 1px solid rgb(44, 44, 44);
-    padding: 8px 12px;
-    text-align: left;
-    font-size: 14px;
-    color: #020202;
-}
-
-th {
-    background-color: #7e7e7e;
-    font-weight: bold;
-    text-align: center;
-}
-
-#Integrantes, #Projeto, #Divisão {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #e0dfde;
-    border: 5px solid #636262;
-    border-radius: 8px;
-}
-
-#Integrantes_white
-.img{
-    text-align: center; 
-}
-
-h1{
-    color: #fafafa;
-}
-p,h2{
-    color: #0a0a0a;
-}
-
 @media (max-width: 768px) {
     #Integrantes, #Divisão, #Projeto {
         max-width: 90%;
     }
-}
-
-.footer {
-    background-color: #333; /* Cor de fundo diferente */
-    color: white; /* Cor do texto */
-    text-align: center; /* Alinhamento do texto */
-    padding: 8px ; /* Espaçamento interno */
-    margin-top: 14px; /* Margem superior */
 }
