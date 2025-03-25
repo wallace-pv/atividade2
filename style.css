@@ -2,16 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #F5F5DC, #A67B5B);
+    background-image: linear-gradient(to bottom, #A8D5BA, #4CAF50);
     background-attachment: fixed;
-    color: #2C2C2C;
+    color: #2C3E50;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 header {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #8B5E3B;
-    color: #F5F5DC;
+    background-color: #2C6B3C;
+    color:  #F5F5DC;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    color: #3E2723;
+    color: #2D3E2F;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em; 
     text-transform: uppercase; 
@@ -38,14 +38,14 @@ button {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #6B4423;
+    background-color: #388E3C;
     color: #F5F5DC;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 button:hover {
-    background-color: #3E2723;
+    background-color: #2C6B3C;
     color: #F5F5DC;
 }
 
@@ -84,8 +84,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: 	#A67B5B;
-    background-color: #3E2723;
+    color: 	#81C784;
+    background-color: #2C6B3C;
     border-radius: 5px;
     transform: scale(1.5);
 }
@@ -106,7 +106,7 @@ th, td {
 }
 
 th {
-    background-color: #8B5E3B;
+    background-color: #2C6B3C;
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
@@ -116,9 +116,9 @@ th {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px; /* Aumentando a largura máxima para telas maiores */
-    background-color: #FAF3E0;
-    border: 3px solid #8B5E3B;
-    color: #3E2723;
+    background-color: #E8F5E9;
+    border: 3px solid #388E3C;
+    color: #2C6B3C;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
 }
@@ -134,18 +134,19 @@ th {
 }
 
 .dark-mode #Integrantes > div { /* Estilos para as divs dos integrantes no modo escuro */
-    background-color: #333; /* Cor de fundo para o modo escuro */
-    border-color: #555; /* Cor da borda para o modo escuro */
+    background-color: #2E5232; /* Cor de fundo para o modo escuro */
+    border-color: #3E5C42; /* Cor da borda para o modo escuro */
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para o modo escuro */
+    color: #A0C8A1;
 }
 
 p, h2 {
-    color: #0a0a0a;
+    color: #2C3E50;
     transition: color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 .footer {
-    background-color: #3E2723;
+    background-color: #2C6B3C;
     color: #F5F5DC;
     text-align: center;
     padding: 15px; /* Aumentando o padding para melhor visualização */
@@ -155,62 +156,62 @@ p, h2 {
 
 /* Estilos para o modo escuro */
 .dark-mode {
-    background-image: linear-gradient(to bottom, #121212, #1E1E1E);
+    background-image: linear-gradient(to bottom, #1B2A21, #2C3E4F);
     color: #E0E0E0;
 }
 
 .dark-mode header {
-    background-color: #252525;
+    background-color: #1F3A2B;
 }
 
 .dark-mode h1, .dark-mode p, .dark-mode h2 {
-    color: #222;; /* Cinza claro */
+    color: #A0C8A1;; /* Cinza claro */
 }
 
 .dark-mode button {
-    background-color: #444;
+    background-color: #2E5232;
     color: #E0E0E0;
 }
 
 .dark-mode button:hover {
-    background-color: #666;
+    background-color: #3C7045;
 }
 
 .dark-mode .titulo {
-    color: #ffffff; /* Dourado no modo escuro */
+    color: #D4E6D6; /* Dourado no modo escuro */
 }
 
 .dark-mode nav ul li a {
-    color: #E0E0E0; /* Cinza claro */
+    color: #A0C8A1; /* Cinza claro */
 }
 
 .dark-mode nav ul li a:hover {
-    color: #222; /* Dourado elegante */
-    background-color: #444;
+    color: #2E5232; /* Dourado elegante */
+    background-color: #1F3A2B;
 }
 
 
 .dark-mode th, .dark-mode td {
-    color: white;
-    border-color: #555;
+    color: #E0E0E0;
+    border-color: #3E5C42;
 }
 
 .dark-mode th {
-    background-color: #333;
+    background-color: #2E5232;
 }
 
 .dark-mode #Integrantes, .dark-mode #Projeto, .dark-mode #Divisão {
-    background-color: #222;
-    border-color: #444;
+    background-color: #25382B;
+    border-color: #3C7045;
 }
 
 .dark-mode p, .dark-mode h2, .dark-mode h1 {
-    color: #fff;
+    color: #A0C8A1;
 }
 
 .dark-mode .footer {
-    background-color: #222;
-    color: #444;
+    background-color: #25382B;
+    color: #A0C8A1;
 }
 
 /* Responsividade para celular */
