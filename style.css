@@ -53,16 +53,23 @@ nav ul li {
     margin: 0 20px;
 }
 
+
 nav ul li a {
     color: white;
     text-decoration: none;
+    display: inline-block;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
+    padding: 5px 60px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+  
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: 	#708090;
+    background-color: #696969;
+    border-radius: 5px;
+    transform: scale(1.5);
 }
 
 table {
