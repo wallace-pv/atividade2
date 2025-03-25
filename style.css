@@ -10,7 +10,7 @@ body {
 
 header {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #2C6B3C;
+    background-color: #006400;
     color:  #F5F5DC;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    color: #2D3E2F;
+    color: #81C784;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em; 
     text-transform: uppercase; 
