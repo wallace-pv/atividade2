@@ -2,20 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #f4f4f4, #333);
+    background-image: linear-gradient(to bottom, #F5F5DC, #A67B5B);
     background-attachment: fixed;
-    color: black;
+    color: #2C2C2C;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 header {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #333;
-    color: white;
+    background-color: #8B5E3B;
+    color: #F5F5DC;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
+
+h1 {
+    color: #3E2723;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em; 
+    text-transform: uppercase; 
+    font-weight: bold;
+    transition: color 1s ease;
+}
+
 
 .container {
     text-align: right;
@@ -27,19 +38,26 @@ button {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #c4c3c1;
-    color: black;
+    background-color: #6B4423;
+    color: #F5F5DC;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 button:hover {
-    background-color: #050505;
-    color: rgb(253, 253, 253);
+    background-color: #3E2723;
+    color: #F5F5DC;
 }
 
 .img {
     text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -55,7 +73,7 @@ nav ul li {
 
 
 nav ul li a {
-    color: white;
+    color: #F5F5DC;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
@@ -66,8 +84,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: 	#708090;
-    background-color: #696969;
+    color: 	#A67B5B;
+    background-color: #3E2723;
     border-radius: 5px;
     transform: scale(1.5);
 }
@@ -88,7 +106,7 @@ th, td {
 }
 
 th {
-    background-color: #7e7e7e;
+    background-color: #8B5E3B;
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
@@ -98,8 +116,9 @@ th {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px; /* Aumentando a largura máxima para telas maiores */
-    background-color: #e0dfde;
-    border: 5px solid #636262;
+    background-color: #FAF3E0;
+    border: 3px solid #8B5E3B;
+    color: #3E2723;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
 }
@@ -120,19 +139,14 @@ th {
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para o modo escuro */
 }
 
-h1 {
-    color: #fafafa;
-    transition: color 0.3s; /* Adicionando transição para o modo escuro */
-}
-
 p, h2 {
     color: #0a0a0a;
     transition: color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #3E2723;
+    color: #F5F5DC;
     text-align: center;
     padding: 15px; /* Aumentando o padding para melhor visualização */
     margin-top: 20px;
@@ -141,31 +155,53 @@ p, h2 {
 
 /* Estilos para o modo escuro */
 .dark-mode {
-    background-image: linear-gradient(to bottom, #1a1a1a, #000);
-    color: white;
+    background-image: linear-gradient(to bottom, #121212, #1E1E1E);
+    color: #E0E0E0;
 }
 
 .dark-mode header {
-    background-color: #242323;
+    background-color: #252525;
+}
+
+.dark-mode h1, .dark-mode p, .dark-mode h2 {
+    color: #222;; /* Cinza claro */
 }
 
 .dark-mode button {
-    background-color: #333;
-    color: white;
+    background-color: #444;
+    color: #E0E0E0;
 }
 
 .dark-mode button:hover {
-    background-color: #555;
+    background-color: #666;
 }
+
+.dark-mode .titulo {
+    color: #ffffff; /* Dourado no modo escuro */
+}
+
+.dark-mode nav ul li a {
+    color: #E0E0E0; /* Cinza claro */
+}
+
+.dark-mode nav ul li a:hover {
+    color: #222; /* Dourado elegante */
+    background-color: #444;
+}
+
 
 .dark-mode th, .dark-mode td {
     color: white;
     border-color: #555;
 }
 
+.dark-mode th {
+    background-color: #333;
+}
+
 .dark-mode #Integrantes, .dark-mode #Projeto, .dark-mode #Divisão {
-    background-color: #242323;
-    border-color: #222;
+    background-color: #222;
+    border-color: #444;
 }
 
 .dark-mode p, .dark-mode h2, .dark-mode h1 {
@@ -173,8 +209,8 @@ p, h2 {
 }
 
 .dark-mode .footer {
-    background-color: #242323;
-    color: white;
+    background-color: #222;
+    color: #444;
 }
 
 /* Responsividade para celular */
@@ -202,17 +238,18 @@ p, h2 {
         width: 80%; /* Faz o botão ocupar mais largura em telas menores */
         margin-bottom: 15px;
     }
-
+    
     .img div {
         margin-bottom: 20px; /* Adiciona espaço entre os membros da equipe */
         padding: 15px;
-        border: 1px solid #ccc; /* Adiciona uma borda sutil para separar os membros */
+        border: px solid #ccc; /* Adiciona uma borda sutil para separar os membros */
         border-radius: 5px;
     }
 
     .img img {
         width: 100px; /* Reduz o tamanho das imagens em telas menores */
         height: auto;
+        border-radius: 10px;
     }
 
     th, td {
