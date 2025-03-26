@@ -165,7 +165,7 @@ p, h2 {
 }
 
 .dark-mode h1, .dark-mode p, .dark-mode h2 {
-    color: #A0C8A1;; /* Cinza claro */
+    color: #A0C8A1;; 
 }
 
 .dark-mode button {
@@ -178,16 +178,16 @@ p, h2 {
 }
 
 .dark-mode .titulo {
-    color: #D4E6D6; /* Dourado no modo escuro */
+    color: #D4E6D6; 
 }
 
 .dark-mode nav ul li a {
-    color: #A0C8A1; /* Cinza claro */
+    color: #A0C8A1; 
 }
 
 .dark-mode nav ul li a:hover {
-    color: #2E5232; /* Dourado elegante */
-    background-color: #1F3A2B;
+    color: #2E5232; 
+    background-color: #A0C8A1;
 }
 
 
