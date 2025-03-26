@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
     font-family: Arial, sans-serif;
@@ -24,8 +24,8 @@ header {
 h1 {
     color: #81C784;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3em; 
-    text-transform: uppercase; 
+    font-size: 3em;
+    text-transform: uppercase;
     font-weight: bold;
     transition: color 1s ease;
 }
@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: darkgreen; 
+    color: darkgreen;
     text-decoration: underline;
 }
 
@@ -94,7 +94,7 @@ nav ul li a {
     padding: 5px 60px;
     transition: color 0.3s ease, transform 0.3s ease;
     font-size: 18px;
-  
+
 }
 
 nav ul li a:hover {
@@ -179,7 +179,7 @@ p, h2 {
 }
 
 .dark-mode h1, .dark-mode p, .dark-mode h2 {
-    color: #A0C8A1;; 
+    color: #A0C8A1;;
 }
 
 .dark-mode button {
@@ -192,15 +192,15 @@ p, h2 {
 }
 
 .dark-mode .titulo {
-    color: #D4E6D6; 
+    color: #D4E6D6;
 }
 
 .dark-mode nav ul li a {
-    color: #A0C8A1; 
+    color: #A0C8A1;
 }
 
 .dark-mode nav ul li a:hover {
-    color: #2E5232; 
+    color: #2E5232;
     background-color: #A0C8A1;
 }
 
@@ -228,6 +228,37 @@ p, h2 {
     color: #A0C8A1;
 }
 
+/* Estilos para o botão de voltar ao topo */
+#btnTopo {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixado na tela */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da parte direita */
+    z-index: 99; /* Garante que fique acima de outros elementos */
+    border: none;
+    outline: none;
+    background-color: #388E3C; /* Cor de fundo */
+    color: #F5F5DC; /* Cor do texto */
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#btnTopo:hover {
+    background-color: #2C6B3C;
+}
+
+.dark-mode #btnTopo {
+    background-color: #2E5232;
+    color: #E0E0E0;
+}
+
+.dark-mode #btnTopo:hover {
+    background-color: #3C7045;
+}
+
 /* Responsividade para celular */
 @media (max-width: 600px) {
     #Integrantes, #Divisão, #Projeto, header, table {
@@ -253,7 +284,7 @@ p, h2 {
         width: 80%; /* Faz o botão ocupar mais largura em telas menores */
         margin-bottom: 15px;
     }
-    
+
     .img div {
         margin-bottom: 20px; /* Adiciona espaço entre os membros da equipe */
         padding: 15px;
@@ -279,9 +310,15 @@ p, h2 {
     h2 {
         font-size: 1.2em; /* Reduz o tamanho dos subtítulos */
     }
-#btnTopo {
-        width: 80%; /* Faz o botão ocupar mais largura em telas menores */
-        margin-bottom: 15px;
+    #btnTopo {
+        display: none; /* Inicialmente escondido */
+        position: fixed; /* Fixado na tela */
+        bottom: 15px; /* Ajuste a distância da parte inferior para celular */
+        right: 15px; /* Ajuste a distância da parte direita para celular */
+        width: auto; /* Largura automática para o conteúdo */
+        padding: 8px 12px; /* Reduz o padding para telas menores */
+        font-size: 14px; /* Reduz a fonte para telas menores */
+        border-radius: 5px;
     }
 
 }
@@ -302,26 +339,26 @@ p, h2 {
         margin: 0 10px;
     }
 
-#btnTopo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: auto;
-    height: 50px;
-    background-color: #388E3C;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Esconde o botão inicialmente */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.2s;
-}
+    #btnTopo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: auto;
+        height: 50px;
+        background-color: #388E3C;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        display: none; /* Esconde o botão inicialmente */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s;
+    }
 
-#btnTopo:hover {
-    background-color: #2C6B3C;
-    transform: scale(1.1);
-}
+    #btnTopo:hover {
+        background-color: #2C6B3C;
+        transform: scale(1.1);
+    }
 
 }
