@@ -279,6 +279,11 @@ p, h2 {
     h2 {
         font-size: 1.2em; /* Reduz o tamanho dos subtítulos */
     }
+#btnTopo {
+        width: 80%; /* Faz o botão ocupar mais largura em telas menores */
+        margin-bottom: 15px;
+    }
+
 }
 
 /* Media query para telas um pouco maiores que celulares (tablets pequenos) */
@@ -301,7 +306,7 @@ p, h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
+    width: auto;
     height: 50px;
     background-color: #388E3C;
     color: white;
