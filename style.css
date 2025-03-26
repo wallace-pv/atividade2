@@ -60,6 +60,17 @@ img {
     border-radius: 50%;
 }
 
+a {
+    color: green;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: darkgreen; 
+    text-decoration: underline;
+}
+
 nav ul {
     list-style: none;
     padding: 10px 0;
