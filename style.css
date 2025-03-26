@@ -296,4 +296,27 @@ p, h2 {
     nav ul li {
         margin: 0 10px;
     }
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #388E3C;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Esconde o botão inicialmente */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnTopo:hover {
+    background-color: #2C6B3C;
+    transform: scale(1.1);
+}
+
 }
