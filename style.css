@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     color: #2C3E50;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
+    
 }
 
 header {
@@ -153,6 +154,54 @@ th {
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para o modo escuro */
     color: #A0C8A1;
 }
+/* Adicionando animações */
+
+.card-impar {
+    animation: aparecer-impar ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+.card-par {
+    animation: aparecer-par ease-in;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+@keyframes aparecer-impar {
+    from {
+        opacity: 0;
+        translate: 500px 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+@keyframes aparecer-par {
+    from {
+        opacity: 0;
+        translate: -500px 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+.card-footer {
+    animation: aparecer-footer ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 12% entry 100%; 
+}
+
+@keyframes aparecer-footer {
+    from {
+        opacity: 0;
+        translate: 0 100px; 
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
 
 p, h2 {
     color: #2C3E50;
@@ -166,6 +215,7 @@ p, h2 {
     padding: 15px; /* Aumentando o padding para melhor visualização */
     margin-top: 20px;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
+    
 }
 
 /* Estilos para o modo escuro */
