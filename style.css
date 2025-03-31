@@ -148,13 +148,13 @@ th {
     text-align: center; /* Centraliza o conteúdo dentro da div */
 }
 
-.dark-mode #Integrantes > div { /* Estilos para as divs dos integrantes no modo escuro */
-    background-color: #2E5232; /* Cor de fundo para o modo escuro */
-    border-color: #3E5C42; /* Cor da borda para o modo escuro */
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para o modo escuro */
+.dark-mode #Integrantes > div { 
+    background-color: #2E5232; /
+    border-color: #3E5C42; 
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); 
     color: #A0C8A1;
 }
-/* Adicionando animações */
+/* Adicionando as animações */
 
 .card-impar {
     animation: aparecer-impar ease-in-out;
@@ -212,9 +212,9 @@ p, h2 {
     background-color: #2C6B3C;
     color: #F5F5DC;
     text-align: center;
-    padding: 15px; /* Aumentando o padding para melhor visualização */
+    padding: 15px; 
     margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
+    transition: background-color 0.3s, color 0.3s; 
     
 }
 
@@ -280,15 +280,15 @@ p, h2 {
 
 /* Estilos para o botão de voltar ao topo */
 #btnTopo {
-    display: none; /* Inicialmente escondido */
-    position: fixed; /* Fixado na tela */
-    bottom: 20px; /* Distância da parte inferior */
-    right: 20px; /* Distância da parte direita */
-    z-index: 99; /* Garante que fique acima de outros elementos */
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
     border: none;
     outline: none;
-    background-color: #388E3C; /* Cor de fundo */
-    color: #F5F5DC; /* Cor do texto */
+    background-color: #388E3C; 
+    color: #F5F5DC; 
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 5px;
@@ -322,53 +322,63 @@ p, h2 {
     }
 
     nav ul li {
-        display: block; /* Coloca os itens do menu em linhas separadas */
-        margin: 10px 0; /* Adiciona um pouco de espaço entre os itens */
+        display: block; 
+        margin: 10px 0; 
     }
 
     .container {
-        text-align: center; /* Centraliza o botão em telas menores */
+        text-align: center; 
     }
 
     button {
-        width: 80%; /* Faz o botão ocupar mais largura em telas menores */
+        width: 80%; 
         margin-bottom: 15px;
     }
 
     .img div {
-        margin-bottom: 20px; /* Adiciona espaço entre os membros da equipe */
+        margin-bottom: 20px; 
         padding: 15px;
-        border: px solid #ccc; /* Adiciona uma borda sutil para separar os membros */
+        border: px solid #ccc; 
         border-radius: 5px;
     }
 
     .img img {
-        width: 100px; /* Reduz o tamanho das imagens em telas menores */
+        width: 100px; 
         height: auto;
         border-radius: 10px;
     }
 
     th, td {
-        font-size: 12px; /* Reduz a fonte da tabela em telas menores */
+        font-size: 12px; 
         padding: 6px 8px;
     }
 
     h1 {
-        font-size: 1.5em; /* Reduz o tamanho do título principal */
+        font-size: 1.5em; 
     }
 
     h2 {
-        font-size: 1.2em; /* Reduz o tamanho dos subtítulos */
+        font-size: 1.2em; 
     }
     #btnTopo {
-        display: none; /* Inicialmente escondido */
-        position: fixed; /* Fixado na tela */
-        bottom: 15px; /* Ajuste a distância da parte inferior para celular */
-        right: 15px; /* Ajuste a distância da parte direita para celular */
-        width: auto; /* Largura automática para o conteúdo */
-        padding: 8px 12px; /* Reduz o padding para telas menores */
-        font-size: 14px; /* Reduz a fonte para telas menores */
+        display: none; 
+        position: fixed; 
+        bottom: 15px; 
+        right: 15px; 
+        width: auto; 
+        padding: 8px 12px; 
+        font-size: 14px; 
         border-radius: 5px;
+    }
+
+    .card-impar {
+        animation-range: cover 0% cover 30%; 
+    }
+    .card-par {
+        animation-range: cover 0% cover 30%; 
+    }
+    .card-alt {
+        animation-range: entry 0% entry 50%; 
     }
 
 }
@@ -401,7 +411,7 @@ p, h2 {
         border-radius: 50%;
         font-size: 24px;
         cursor: pointer;
-        display: none; /* Esconde o botão inicialmente */
+        display: none; 
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s, transform 0.2s;
     }
