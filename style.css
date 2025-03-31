@@ -1,6 +1,8 @@
+/* Estilos Globais */
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,13 +11,39 @@ body {
     background-attachment: fixed;
     color: #2C3E50;
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
-    
 }
 
+p, h2 {
+    color: #2C3E50;
+    transition: color 0.3s; /* Adicionando transição para o modo escuro */
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.img {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Estilos do Cabeçalho (Header) */
 header {
     font-family: 'Times New Roman', Times, serif;
     background-color: #006400;
-    color:  #F5F5DC;
+    color: #F5F5DC;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -31,12 +59,13 @@ h1 {
     transition: color 1s ease;
 }
 
-
+/* Estilos do Container do Botão de Modo Escuro */
 .container {
     text-align: right;
     margin-bottom: 10px; /* Adicionando um pouco de espaço abaixo do botão */
 }
 
+/* Estilos do Botão de Modo Escuro */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -50,31 +79,9 @@ button {
 
 button:hover {
     background-color: #2C6B3C;
-    color: #F5F5DC;
 }
 
-.img {
-    text-align: center;
-}
-
-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-a {
-    color: green;
-    text-decoration: none;
-
-}
-
-a:hover {
-    color: darkgreen;
-    text-decoration: underline;
-}
-
+/* Estilos da Navegação (Nav) */
 nav ul {
     list-style: none;
     padding: 10px 0;
@@ -86,7 +93,6 @@ nav ul li {
     margin: 0 20px;
 }
 
-
 nav ul li a {
     color: #F5F5DC;
     text-decoration: none;
@@ -95,16 +101,16 @@ nav ul li a {
     padding: 5px 60px;
     transition: color 0.3s ease, transform 0.3s ease;
     font-size: 18px;
-
 }
 
 nav ul li a:hover {
-    color: 	#81C784;
+    color: #81C784;
     background-color: #2C6B3C;
     border-radius: 5px;
     transform: scale(1.5);
 }
 
+/* Estilos da Tabela */
 table {
     width: 90%;
     border-collapse: collapse;
@@ -127,7 +133,8 @@ th {
     transition: background-color 0.3s, color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-#Integrantes, #Projeto, #Divisão  {
+/* Estilos das Seções (Integrantes, Projeto, Divisão) */
+#Integrantes, #Projeto, #Divisão {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px; /* Aumentando a largura máxima para telas maiores */
@@ -138,7 +145,8 @@ th {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adicionando transição para o modo escuro */
 }
 
-#Integrantes > div { /* Estilos para as divs dos integrantes */
+/* Estilos específicos para as divs dentro da seção de Integrantes */
+#Integrantes > div {
     border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
     border-radius: 8px; /* Arredonda os cantos */
     padding: 15px; /* Adiciona um espaçamento interno */
@@ -148,24 +156,19 @@ th {
     text-align: center; /* Centraliza o conteúdo dentro da div */
 }
 
-.dark-mode #Integrantes > div { 
-    background-color: #2E5232; /
-    border-color: #3E5C42; 
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); 
-    color: #A0C8A1;
-}
-/* Adicionando as animações */
-
+/* implementação das animações da pagina*/
 .card-impar {
     animation: aparecer-impar ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 50%; 
 }
+
 .card-par {
     animation: aparecer-par ease-in;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 50%; 
 }
+
 @keyframes aparecer-impar {
     from {
         opacity: 0;
@@ -176,6 +179,7 @@ th {
         translate: 0 0;
     }
 }
+
 @keyframes aparecer-par {
     from {
         opacity: 0;
@@ -186,16 +190,17 @@ th {
         translate: 0 0;
     }
 }
+
 .card-footer {
     animation: aparecer-footer ease-in-out;
     animation-timeline: view();
-    animation-range: entry 12% entry 100%; 
+    animation-range: entry 12% entry 100%;
 }
 
 @keyframes aparecer-footer {
     from {
         opacity: 0;
-        translate: 0 100px; 
+        translate: 0 100px;
     }
     to {
         opacity: 1;
@@ -203,22 +208,17 @@ th {
     }
 }
 
-p, h2 {
-    color: #2C3E50;
-    transition: color 0.3s; /* Adicionando transição para o modo escuro */
-}
-
+/* Estilos do Rodapé (Footer) */
 .footer {
     background-color: #2C6B3C;
     color: #F5F5DC;
     text-align: center;
-    padding: 15px; 
+    padding: 15px;
     margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s; 
-    
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos para o modo escuro */
+/* Estilos para o Modo Escuro */
 .dark-mode {
     background-image: linear-gradient(to bottom, #1B2A21, #2C3E4F);
     color: #E0E0E0;
@@ -229,7 +229,7 @@ p, h2 {
 }
 
 .dark-mode h1, .dark-mode p, .dark-mode h2 {
-    color: #A0C8A1;;
+    color: #A0C8A1;
 }
 
 .dark-mode button {
@@ -241,10 +241,6 @@ p, h2 {
     background-color: #3C7045;
 }
 
-.dark-mode .titulo {
-    color: #D4E6D6;
-}
-
 .dark-mode nav ul li a {
     color: #A0C8A1;
 }
@@ -253,7 +249,6 @@ p, h2 {
     color: #2E5232;
     background-color: #A0C8A1;
 }
-
 
 .dark-mode th, .dark-mode td {
     color: #E0E0E0;
@@ -269,26 +264,29 @@ p, h2 {
     border-color: #3C7045;
 }
 
-.dark-mode p, .dark-mode h2, .dark-mode h1 {
-    color: #A0C8A1;
-}
-
 .dark-mode .footer {
     background-color: #25382B;
     color: #A0C8A1;
 }
 
-/* Estilos para o botão de voltar ao topo */
+.dark-mode #Integrantes > div {
+    background-color: #2E5232;
+    border-color: #3E5C42;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+    color: #A0C8A1;
+}
+
+/* Estilos para o Botão de Voltar ao Topo */
 #btnTopo {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 99; 
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
     border: none;
     outline: none;
-    background-color: #388E3C; 
-    color: #F5F5DC; 
+    background-color: #388E3C;
+    color: #F5F5DC;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 5px;
@@ -297,7 +295,7 @@ p, h2 {
 }
 
 #btnTopo:hover {
-    background-color: #2C6B3C;
+    background-color: #6abb72;
 }
 
 .dark-mode #btnTopo {
@@ -309,7 +307,7 @@ p, h2 {
     background-color: #3C7045;
 }
 
-/* Responsividade para celular */
+/* Estilos para Responsividade (Celular) */
 @media (max-width: 600px) {
     #Integrantes, #Divisão, #Projeto, header, table {
         max-width: 95%;
@@ -322,68 +320,61 @@ p, h2 {
     }
 
     nav ul li {
-        display: block; 
-        margin: 10px 0; 
+        display: block;
+        margin: 10px 0;
     }
 
     .container {
-        text-align: center; 
+        text-align: center;
     }
 
     button {
-        width: 80%; 
+        width: 80%;
         margin-bottom: 15px;
     }
 
-    .img div {
-        margin-bottom: 20px; 
-        padding: 15px;
-        border: px solid #ccc; 
-        border-radius: 5px;
-    }
-
     .img img {
-        width: 100px; 
+        width: 100px;
         height: auto;
         border-radius: 10px;
     }
 
     th, td {
-        font-size: 12px; 
+        font-size: 12px;
         padding: 6px 8px;
     }
 
     h1 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
 
     h2 {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
+
     #btnTopo {
-        display: none; 
-        position: fixed; 
-        bottom: 15px; 
-        right: 15px; 
-        width: auto; 
-        padding: 8px 12px; 
-        font-size: 14px; 
+        bottom: 15px;
+        right: 15px;
+        width: auto;
+        padding: 8px 12px;
+        font-size: 14px;
         border-radius: 5px;
     }
 
     .card-impar {
-        animation-range: cover 0% cover 30%; 
-    }
-    .card-par {
-        animation-range: cover 0% cover 30%; 
-    }
-    .card-alt {
-        animation-range: entry 0% entry 50%; 
+        animation-range: cover 0% cover 30%;
     }
 
+    .card-par {
+        animation-range: cover 0% cover 30%;
+    }
+
+    .card-alt {
+        animation-range: entry 0% entry 50%;
+    }
 }
 
-/* Media query para telas um pouco maiores que celulares (tablets pequenos) */
+/* Estilos para Responsividade (Tablets Pequenos) */
 @media (min-width: 601px) and (max-width: 768px) {
     #Integrantes, #Divisão, #Projeto, header, table {
         max-width: 90%;
@@ -411,7 +402,7 @@ p, h2 {
         border-radius: 50%;
         font-size: 24px;
         cursor: pointer;
-        display: none; 
+        display: none;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s, transform 0.2s;
     }
@@ -420,5 +411,4 @@ p, h2 {
         background-color: #2C6B3C;
         transform: scale(1.1);
     }
-
 }
